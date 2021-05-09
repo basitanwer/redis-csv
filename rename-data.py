@@ -1,13 +1,13 @@
 import pandas as pd
 
-input = pd.read_csv("C:/test/celebrities_profiles.txt", '\t')
+input = pd.read_csv("./celebrities_profiles.txt", '\t')
 from datetime import datetime
 from dateutil.parser import parse
 
 columns = input.columns.values
 date_column = 'created_at'
 
-with open('compile.txt', 'w', encoding='utf-8') as compiled:
+with open('Redis-commands.txt', 'w', encoding='utf-8') as compiled:
     for index, val in input.iterrows():
         line = f"HSET twitter:{index} "
         
