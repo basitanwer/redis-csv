@@ -1,0 +1,4 @@
+redis-sql-bench/.idea
+redis-sql-bench/target
+redis-sql-bench/redis-sql-bench.iml
+fake-*.txt
